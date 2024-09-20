@@ -34,16 +34,77 @@ h1:hover{
   justify-content: space-between;
   margin-bottom: 20px;
 }
+/* Position the search section in the upper right corner */
+.search-section {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
+/* Resize the filter dropdown and random cocktail button */
+select, button {
+  padding: 100px; /* Increase padding */
+  font-size: 30px; /* Increase font size */
+}
+
+/* Ensure the dropdown and button are larger */
 .control-item {
   flex: 1;
   margin: 0 10px;
 }
 
-input, select, button {
-  padding: 10px;
+button {
+  padding: 100px 300px; /* Make the button larger */
+}
+
+select {
+  width: 170px; 
+  height: 50px;
+  padding: 6px;
+  margin: 5px 0;
+  margin-left: 350px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #ff1493;
+}
+select:hover {
+  background-color: aqua; /* Optional: change color on hover */
+}
+input{
+  padding: 5px;
   margin: 5px 0;
   font-size: 16px;
+  background-color: aqua;
+
+}
+button{
+  padding: 5px;
+  margin: 5px 0;
+  font-size: 16px;
+  background-color: #ff1493;
+  cursor: pointer;
+}
+button:hover {
+  background-color: aqua; /* Optional: change color on hover */
+}
+/* Larger button with bigger font size for the Random Cocktail button */
+.random-cocktail-btn {
+  width: 300px; 
+  height: 50px;
+  padding: 6px;
+  margin: 5px 0;
+  border-radius: 10px;
+  font-size: 25px;
+  color: black;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.random-cocktail-btn:hover {
+  background-color: #ff1493; /* Optional: change color on hover */
 }
 
 /* Grid layout for drink results */

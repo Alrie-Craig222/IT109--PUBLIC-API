@@ -11,13 +11,13 @@
        <br><br>
         <!-- Container for search, filter, and random drink button -->
         <div class="controls">
-            <div class="control-item">
+            <div class="control-item search-section">
                 <label for="drink-name"></label>
                 <input type="text" id="drink-name" placeholder="Search cocktail by name">
                 <button onclick="searchCocktailByName()">Search</button>
             </div>
-
             <div class="control-item">
+                <br><br>
                 <label for="alcoholic-filter"></label>
                 <select id="alcoholic-filter" onchange="filterDrinks()">
                     <option value="" disabled selected>Select Filter</option>
@@ -27,7 +27,8 @@
             </div>
 
             <div class="control-item">
-                <button onclick="getRandomCocktail()">Get a Random Cocktail</button>
+                <br><br>
+                <button class="random-cocktail-btn" onclick="getRandomCocktail()">Get a Random Cocktail</button>
             </div>
         </div>
         <br><br><br><br> <br><br><br><br> <br><br>
